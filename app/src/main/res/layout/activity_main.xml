@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WANDEZIA FOOD CAFE"
+        android:layout_gravity="center"
+         android:textColor="#ffffff"
+        android:background="#013220"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+     <View
+         android:layout_width="400dp"
+         android:layout_height="1dp"
+         android:background="#ACA1A1"
+         android:layout_gravity="center"
+         android:layout_marginTop="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="CustomerID:"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+             android:hint="12433"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="First Name:"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="MULINDWA"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Last Name:"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="Ntambi"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Email:"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textWebEmailAddress"
+            android:hint="text@gmail.com"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="PhoneNumber:"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:hint="Enter Number"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Types of food:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"/>
+
+        <Spinner
+            android:id="@+id/food"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:entries="@array/food"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PREVIEW"
+        android:textColor="#F5FBF6"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:textColor="#F5FBF6"
+        android:background="@drawable/mybutton"
+         android:layout_marginTop="20dp"/>
+
+
+
+
+</LinearLayout>

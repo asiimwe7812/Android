@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ClassAssigment</string>
+    <string-array name="food">
+        <item>Select Your food</item>
+        <item>Salads</item>
+        <item>Break fast</item>
+        <item>Pastries and Desert</item>
+        <item>Sand witches</item>
+        <item>Local food</item>
+        <item>Soup</item>
+        <item>Milk</item>
+    </string-array>
+</resources>
